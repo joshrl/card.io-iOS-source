@@ -122,13 +122,14 @@
   }
 
   // Add shadow to camera preview
-  _shadowLayer = [CALayer layer];
-  self.shadowLayer.shadowRadius = kDropShadowRadius;
-  self.shadowLayer.shadowColor = [UIColor blackColor].CGColor;
-  self.shadowLayer.shadowOffset = CGSizeMake(0.0f, 0.0f);
-  self.shadowLayer.shadowOpacity = 0.5f;
-  self.shadowLayer.masksToBounds = NO;
-  [self.cardIOView.layer insertSublayer:self.shadowLayer atIndex:0]; // must go *behind* everything
+
+  //  _shadowLayer = [CALayer layer];
+  //  self.shadowLayer.shadowRadius = kDropShadowRadius;
+  //  self.shadowLayer.shadowColor = [UIColor blackColor].CGColor;
+  //  self.shadowLayer.shadowOffset = CGSizeMake(0.0f, 0.0f);
+  //  self.shadowLayer.shadowOpacity = 0.5f;
+  //  self.shadowLayer.masksToBounds = NO;
+  //  [self.cardIOView.layer insertSublayer:self.shadowLayer atIndex:0]; // must go *behind* everything
 }
 
 - (void)viewWillLayoutSubviews {
